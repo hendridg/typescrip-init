@@ -7,7 +7,7 @@ interface Task {
 class Tasks {
   tasks: Task[];
   constructor(tasks: Task[]) {
-    this.tasks = tasks;
+    this.tasks = [...tasks];
   }
   addTask(task: Task) {
     this.tasks.push(task);
